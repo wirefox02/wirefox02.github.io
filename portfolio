@@ -1,0 +1,302 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 65px;
+  background: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  z-index: 10;
+}
+
+header .menu-icon {
+  display: none;
+  color: white;
+  float: right;
+  padding: 21px 0;
+  font-size: 25px;
+}
+
+@media (max-width: 670px) {
+  header .menu-icon {
+    display: block;
+  }
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left img {
+  width: 124px;
+  padding-top: 20px;
+}
+
+.header-right {
+  float: right;
+  line-height: 65px;
+}
+
+@media (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+}
+
+.header-right a {
+  color: white;
+  display: block;
+  padding: 0 25px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  float: left;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-wrapper {
+  background-image: url("../img/top.png");
+  background-size: cover;
+  color: white;
+  padding: 180px 0 100px;
+  text-align: center;
+}
+
+@media (max-width: 670px) {
+  .top-wrapper {
+    text-align: left;
+  }
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 1000px) {
+  .top-wrapper h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 670px) {
+  .top-wrapper h1 {
+    font-size: 28px;
+  }
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 670px) {
+  .top-wrapper p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 670px) {
+  .btn-wrapper {
+    text-align: center;
+  }
+}
+
+.btn-wrapper p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  opacity: 0.8;
+  display: inline-block;
+}
+
+@media (max-width: 670px) {
+  .btn {
+    width: 100%;
+  }
+}
+
+.btn .fa {
+  margin-right: 5px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background: #3b5998;
+  margin-right: 10px;
+}
+
+@media (max-width: 670px) {
+  .facebook {
+    margin-bottom: 10px;
+  }
+}
+
+.twitter {
+  background: #55acee;
+}
+
+.lesson-wrapper {
+  text-align: center;
+  height: 580px;
+  background: #f7f7f7;
+  padding: 0 5%;
+}
+
+@media (max-width: 1000px) {
+  .lesson-wrapper {
+    height: 990px;
+  }
+}
+
+@media (max-width: 670px) {
+  .lesson-wrapper {
+    height: 1700px;
+  }
+}
+
+.heading {
+  padding: 80px 0 50px;
+}
+
+.heading h2 {
+  font-weight: normal;
+  color: #5f5d60;
+}
+
+@media (max-width: 1000px) {
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+.heading h3 {
+  color: #5f5d60;
+  font-weight: normal;
+}
+
+.lessons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .lessons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.lesson {
+  width: 25%;
+}
+
+@media (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 39%;
+  color: white;
+  width: 100%;
+}
+
+.txt-message {
+  color: #b3aeb5;
+  font-size: 13px;
+  display: inline-block;
+  width: 80%;
+  margin-top: 15px;
+}
+
+.message-wrapper {
+  text-align: center;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #eee;
+}
+
+.message {
+  background: #5dca88;
+  padding: 15px 40px;
+  -webkit-box-shadow: 0 7px #1a7940;
+          box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+@media (max-width: 670px) {
+  .message {
+    width: 100%;
+  }
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
